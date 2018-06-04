@@ -79,17 +79,17 @@ app_license = "MIT"
 # ---------------
 # Hook on document methods and events
 
-doc_events = {
-	"Sales Invoice": {
-		"on_cancel": "hr_bahrain.hr_bahrain.hr_controllers.calculate_gratuity"
-	}
-}
+#doc_events = {
+#	"Sales Invoice": {
+#		"on_cancel": "hr_bahrain.hr_bahrain.hr_controllers.calculate_gratuity"
+#	}
+#}
 
 # Scheduled Tasks
 # ---------------
 
 scheduler_events = {
- 	"hourly": [
+ 	"daily": [
  		"hr_bahrain.hr_bahrain.hr_controllers.calculate_gratuity"
 	],
 }
